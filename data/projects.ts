@@ -47,82 +47,73 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // ============================================
-  // TEMPLATE: Copy this structure to add a new project
-  // ============================================
-  // {
-  //   id: "unique-id",
-  //   title: "Your Project Name",
-  //   description: "Brief description of what the project does and its key features.",
-  //   image: "/your-project-image.jpg",  // Place image in /public folder
-  //   technologies: ["Technology 1", "Technology 2", "Technology 3"],
-  //   githubUrl: "https://github.com/yourusername/project-name",  // Optional
-  //   liveUrl: "https://yourproject.com",  // Optional
-  //   featured: true,  // Optional
-  // },
-
-  // ============================================
-  // YOUR PROJECTS: Replace examples with your own
-  // ============================================
-  
   {
-    id: "1",
-    title: "Example Project 1",
-    description: "A modern web application built with Next.js and TypeScript. This project demonstrates best practices in modern web development.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-    image: "/placeholder-project-1.jpg",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    id: "study-hour-calendar",
+    title: "Study Hour Calendar",
+    description: "A refined tool designed to help scholars visually track and manage their study time and learning progress. Features calendar view, achievement statistics, progress trends, CSV export, and bulk record management.",
+    longDescription: "The Study Hour Calendar is a modern, practical full-stack project designed to visualize and analyze study time with a strong emphasis on performance, maintainability, and future scalability. It operates primarily as a client-side application using localStorage for simplicity and speed, while remaining backend-ready for future expansion. The application delivers a fast, intuitive calendar interface with robust data visualization and long-term maintainability.",
+    image: "/study-hour-calendar.png",
+    technologies: [
+      "Next.js 14",
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "Recharts",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Vitest",
+      "ESLint"
+    ],
+    githubUrl: "https://github.com/naokiwork/idea7-school-tracker",
+    liveUrl: "https://idea7-tau.vercel.app/",
     featured: true,
   },
   
   {
-    id: "2",
-    title: "Example Project 2",
-    description: "A full-stack application with REST API and modern UI. Features include user authentication, database integration, and responsive design.",
-    technologies: ["Node.js", "Express", "MongoDB", "React"],
-    image: "/placeholder-project-2.jpg",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    id: "category-search",
+    title: "Category Search",
+    description: "A fully static, client-side quiz web app built for speed, privacy, and long-term maintainability. Features static site generation, modern UI with smooth animations, data visualization with Recharts, and elegant Japanese typography.",
+    longDescription: "This application is a fully static, client-side quiz web app built with Next.js 14, React 18, and TypeScript. It uses Static Site Generation (SSG) for instant load speed, SEO friendliness, and CDN compatibility. All logic runs in the browser, ensuring complete user privacy and zero backend costs. The UI features Tailwind CSS for clean, responsive design and Framer Motion for smooth animations, with optimized Japanese serif font (Noto Serif JP) for a refined aesthetic.",
+    image: "/category-search.png",
+    technologies: [
+      "Next.js 14",
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Recharts",
+      "Noto Serif JP",
+      "Cloudflare Pages"
+    ],
+    githubUrl: "https://github.com/naokiwork",
+    liveUrl: "https://9e55ea38.my-category.pages.dev",
     featured: true,
   },
   
   {
-    id: "3",
-    title: "Example Project 3",
-    description: "Mobile-first responsive design with advanced animations. Built with a focus on user experience and smooth interactions.",
-    technologies: ["React", "Framer Motion", "CSS", "TypeScript"],
-    image: "/placeholder-project-3.jpg",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    featured: false,
-  },
-  
-  {
-    id: "4",
-    title: "Example Project 4",
-    description: "Real-time collaborative tool with WebSocket integration. Enables multiple users to work together in real-time.",
-    technologies: ["WebSocket", "Node.js", "React", "TypeScript"],
-    image: "/placeholder-project-4.jpg",
-    githubUrl: "https://github.com",
-    // Note: This project doesn't have a liveUrl - it's optional!
-    featured: false,
-  },
-  
-  {
-    id: "5",
-    title: "Example Project 5",
-    description: "Data visualization dashboard with interactive charts. Transforms complex data into intuitive visual representations.",
-    technologies: ["D3.js", "React", "TypeScript", "Chart.js"],
-    image: "/placeholder-project-5.jpg",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    id: "habit-grid",
+    title: "Habit Grid",
+    description: "A modern, client-side habit tracking application designed with a strong emphasis on performance, type safety, UI quality, and long-term maintainability. Features React 18, Vite, Tailwind CSS, Radix UI, and shadcn/ui components.",
+    longDescription: "HabitGrid is a modern, client-side habit tracking application built with React 18 + TypeScript for scalable, type-safe component architecture. It uses Vite for exceptionally fast development experience, Tailwind CSS + Radix UI + shadcn/ui for fully customizable and accessible UI, React Hook Form + Zod for performant form handling with strong validation, and date-fns/Recharts for lightweight date calculations and clear visualizations. The application emphasizes performance with tree-shakable dependencies, optimized builds, and fast global delivery via Cloudflare Pages.",
+    image: "/habit-grid.png",
+    technologies: [
+      "React 18",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Radix UI",
+      "shadcn/ui",
+      "React Hook Form",
+      "Zod",
+      "date-fns",
+      "Recharts",
+      "ESLint",
+      "TypeScript ESLint"
+    ],
+    githubUrl: "https://github.com/naokiwork/habit-tracker-101",
+    liveUrl: "https://bb6088ac.habitgrid-7h8.pages.dev",
     featured: true,
   },
-
-  // ============================================
-  // ADD MORE PROJECTS BELOW
-  // ============================================
-  // Copy the template above and paste here to add more projects
-  
 ];

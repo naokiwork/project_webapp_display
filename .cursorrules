@@ -1,0 +1,45 @@
+# Portfolio Webapp Coding Guidelines
+
+## General Principles
+- Use functional components with TypeScript
+- Prefer modern React patterns (hooks, async/await)
+- Follow GitHub-inspired UI/UX principles: dark mode, clean hierarchy, high information density with readability
+- Use Tailwind CSS for styling
+- Use Framer Motion for smooth animations
+- Use Lucide React for icons
+
+## Code Style
+- Use TypeScript strict mode
+- Use meaningful variable and function names
+- Keep components focused and reusable
+- Use async/await over promises where possible
+- Extract constants to separate files when appropriate
+
+## UI/UX Guidelines (Inspired by GitHub)
+- Dark mode as default (deep blue/navy background: #0d1117)
+- Clear visual hierarchy with proper spacing
+- Contextual information always visible (relative time displays)
+- Smooth scroll animations with Framer Motion
+- Responsive design (mobile-first approach)
+- Clean typography with clear hierarchy
+- Use cards for project display with hover effects
+- Maintain consistency in navigation and layout
+
+## Component Structure
+- Place reusable components in /components folder
+- Use App Router structure (app directory)
+- Separate data from components (data folder for project information)
+- Use TypeScript interfaces for type safety
+
+## Performance
+- Optimize images with Next.js Image component
+- Use lazy loading where appropriate
+- Minimize bundle size
+- Use server components when possible
+
+## Accessibility
+- Use semantic HTML
+- Include proper ARIA labels
+- Ensure keyboard navigation works
+- Maintain proper color contrast
+

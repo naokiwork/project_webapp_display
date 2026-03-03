@@ -4,19 +4,18 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "opennextjs-cloudflare build",
     "start": "next start",
     "lint": "next lint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "next": "^16.1.6",
     "framer-motion": "^11.3.4",
-    "lucide-react": "^0.427.0",
-    "@opennextjs/cloudflare": "^1.17.1"
+    "lucide-react": "^0.427.0"
   },
   "devDependencies": {
     "typescript": "^5.7.2",
@@ -28,6 +27,7 @@
     "tailwindcss": "^3.4.7",
     "eslint": "^9.16.0",
     "eslint-config-next": "^16.1.6",
+    "@opennextjs/cloudflare": "^1.17.1",
     "wrangler": "^4.65.0"
   }
 }

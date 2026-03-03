@@ -120,46 +120,48 @@
    120|### Cloudflare Workers / Pages
    121|
    122|**Cloudflare Build Settings:**
-   123|- **Build command:** `npm run cf:build`
-   124|- **Build output directory:** `.open-next`
-   125|- **Root directory:** Project root
-   126|
-   127|**Local / CI Reproducibility:**
-   128|```bash
-   129|npm ci
-   130|npm run cf:build
-   131|npm run cf:deploy
-   132|```
-   133|
-   134|### Other Deployment Options
+   123|- **Build command:** `npm run build`
+   124|- **Deploy command:** `npm run cf:deploy`
+   125|- **Build output directory:** `.open-next`
+   126|- **Root directory:** Project root
+   127|
+   128|**Local / CI Reproducibility:**
+   129|```bash
+   130|npm ci
+   131|npm run build
+   132|ls -la .open-next/worker.js # Verify worker.js is generated
+   133|npm run cf:deploy
+   134|```
    135|
-   136|- **Vercel:** Refer to previous versions of this README or Vercel documentation for Next.js deployment.
-   137|- **Netlify:** Similar to Vercel, import your GitHub repo
-   138|- **Self-hosted:** Build the project and serve the `out` directory (if using static export)
-   139|
-   140|## Design Philosophy
+   136|### Other Deployment Options
+   137|
+   138|- **Vercel:** Refer to previous versions of this README or Vercel documentation for Next.js deployment.
+   139|- **Netlify:** Similar to Vercel, import your GitHub repo
+   140|- **Self-hosted:** Build the project and serve the `out` directory (if using static export)
    141|
-   142|This portfolio is inspired by GitHub's UI/UX principles:
+   142|## Design Philosophy
    143|
-   144|- **High Information Density** - Display all important information clearly
-   145|- **Clean Visual Hierarchy** - Use spacing and typography to guide the eye
-   146|- **Contextual Information** - Always show relevant details (tech stack, links, etc.)
-   147|- **Dark Mode First** - Professional dark theme that's easy on the eyes
-   148|- **Smooth Interactions** - Subtle animations enhance the user experience
-   149|- **Responsive Design** - Works perfectly on all screen sizes
-   150|
-   151|## License
+   144|This portfolio is inspired by GitHub's UI/UX principles:
+   145|
+   146|- **High Information Density** - Display all important information clearly
+   147|- **Clean Visual Hierarchy** - Use spacing and typography to guide the eye
+   148|- **Contextual Information** - Always show relevant details (tech stack, links, etc.)
+   149|- **Dark Mode First** - Professional dark theme that's easy on the eyes
+   150|- **Smooth Interactions** - Subtle animations enhance the user experience
+   151|- **Responsive Design** - Works perfectly on all screen sizes
    152|
-   153|MIT License - see [LICENSE](LICENSE) file for details
+   153|## License
    154|
-   155|## Credits
+   155|MIT License - see [LICENSE](LICENSE) file for details
    156|
-   157|- Design inspiration from GitHub's UI/UX
-   158|- Built with [Next.js](https://nextjs.org/)
-   159|- Icons from [Lucide](https://lucide.dev/)
-   160|- Animations with [Framer Motion](https://www.framer.com/motion/)
-   161|
-   162|---
+   157|## Credits
+   158|
+   159|- Design inspiration from GitHub's UI/UX
+   160|- Built with [Next.js](https://nextjs.org/)
+   161|- Icons from [Lucide](https://lucide.dev/)
+   162|- Animations with [Framer Motion](https://www.framer.com/motion/)
    163|
-   164|**Note:** Remember to update all placeholder content (name, bio, project data, social links) with your own information before deploying!
+   164|---
    165|
+   166|**Note:** Remember to update all placeholder content (name, bio, project data, social links) with your own information before deploying!
+   167|

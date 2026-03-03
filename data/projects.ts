@@ -48,6 +48,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "training-app",
+    title: "Training App",
+    description: "A progressive web app for tracking daily workouts and building consistency, featuring offline support, data persistence on device, and an intuitive UI.",
+    longDescription: "The Training App is a client-side progressive web application designed for seamless workout tracking. It offers full offline capabilities, ensuring data remains persistent on the user's device without server interaction. The app focuses on a clear, intuitive user interface for logging exercises, tracking progress, and visualizing training contributions over time. Built with modern web technologies, it emphasizes performance, privacy, and user control over data.",
+    image: "/training-app.png",
+    technologies: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "PWA",
+      "Offline-first",
+      "Local Storage"
+    ],
+    liveUrl: "https://main-training-app.naokiondawork.workers.dev/?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+    featured: true,
+  },
+  {
     id: "study-hour-calendar",
     title: "Study Hour Calendar",
     description: "A refined tool designed to help scholars visually track and manage their study time and learning progress. Features calendar view, achievement statistics, progress trends, CSV export, and bulk record management.",

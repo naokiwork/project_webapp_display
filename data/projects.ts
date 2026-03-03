@@ -116,4 +116,32 @@ export const projects: Project[] = [
     liveUrl: "https://bb6088ac.habitgrid-7h8.pages.dev",
     featured: true,
   },
+  
+  {
+    id: "stock-prediction-app",
+    title: "Stock Prediction App",
+    description: "A web-based application that leverages AI to forecast future prices of stocks, indices, and commodities. Combines historical market data with real-time news analysis to provide price predictions up to six months ahead with clear reasoning and visual explanations.",
+    longDescription: "Stock Prediction App is a full-stack AI application that demonstrates full-stack AI application design, integration of financial data APIs, and explainable AI in a real-world domain. The frontend (Next.js) runs on Cloudflare Pages and communicates via HTTPS with a FastAPI backend deployed on Google Cloud Run. The backend aggregates market price data from yfinance, news data from NewsAPI, and AI-driven analysis and forecasting via OpenAI. The processed results are returned to the frontend and displayed through interactive charts and explanatory cards. Key features include AI-based price prediction using historical trends and news sentiment, interactive data visualization, explainable AI output with natural-language reasoning, real-time data integration, responsive UI, and browser notifications for significant price movements.",
+    image: "/stock-prediction-app.png",
+    technologies: [
+      "Next.js 14",
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Recharts",
+      "Radix UI",
+      "Python 3.11+",
+      "FastAPI",
+      "OpenAI API",
+      "yfinance",
+      "NewsAPI",
+      "Docker",
+      "Google Cloud Run",
+      "Cloudflare Pages"
+    ],
+    githubUrl: "https://github.com/naokiwork",
+    liveUrl: "https://f8db7d78.stock-prediction-frontend.pages.dev/",
+    featured: true,
+  },
 ];
